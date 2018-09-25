@@ -63,6 +63,18 @@
 				<p id="copyright">Copyright Infomation</p>
 			</div>
 		</div>
+		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<!-- Added by Alex.
+-------------------- -->
+		<script>
+			$(".bottom_button").click(function(event) { //'event' passed as an argument and next line; 'event.preventDefault();' is used to counter the href in the anchor tag from reloading the page.
+				event.preventDefault();
+	            $(this).prev().slideToggle(2000);
+	        });
+
+		</script>
+		
 	</body>
 </html>
